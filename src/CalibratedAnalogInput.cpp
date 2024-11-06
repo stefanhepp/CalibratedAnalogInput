@@ -127,6 +127,13 @@ void CalibratedAnalogInput::poll()
         // Linear mapping to input range
         mappedValue = map(input, mInputMin, mInputMax, 0, mRangeMax);
     }
+    // clip input to max range
+    if (mappedValue < 0) {
+	mappedValue = 0;
+    }
+    if (mappedValue > mRangeMax) {
+	mappedValue = mRangeMax;
+    }
     
     if (mappedValue < mLastValue - mHysteresis || mappedValue > mLastValue + mHysteresis) {
         mLastValue = mappedValue;

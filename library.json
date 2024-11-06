@@ -1,0 +1,19 @@
+{
+    "name": "CalibratedAnalogInput",
+    "version": "0.2.0",
+    "description": "Analog input with calibration, sensitivity and deadspot, to map analog potis to a fixed range.",
+    "keywords": "analog",
+    "license": "MIT",
+    "authors": {
+	"name": "Stefan Hepp",
+	"url": "https://github.com/stefanhepp/",
+	"maintainer": true
+    },
+    "repository":
+    {
+	"type": "git",
+	"url": "https://github.com/stefanhepp/CalibratedAnalogInput.git"
+    },
+    "frameworks": "arduino",
+    "platforms": [ "atmelavr" ]
+}
